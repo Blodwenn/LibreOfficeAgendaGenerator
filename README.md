@@ -2,7 +2,7 @@
 
 A LibreOffice automation script written in Python using the UNO API. This tool generates a fully hyperlinked yearly agenda — including a title page, yearly calendar, monthly overviews, and daily pages based on a customizable template.
 
-Each generated daily page includes links back to the corresponding **monthly** and **yearly** views, making it easy to navigate across the planner. Ideal for reMarkable tablet users, printable planners, or anyone wanting a personalized, interactive agenda.
+Each generated daily page includes links back to the corresponding **monthly** and **yearly** views, making it easy to navigate across the planner. Ideal for reMarkable users, printable planners, or anyone wanting a personalized, interactive agenda.
 
 ## Installation
 
@@ -37,7 +37,7 @@ Once you confirm, the script will automatically generate:
 - Monthly overview pages.
 - Hyperlinked daily pages, with each day linked to its monthly and yearly view.
 
-Then you can export the file as a pdf, and use it on you Remarkable.
+Then you can export the file as a pdf, and use it on you reMarkable.
 
 ## Template Customization
 
