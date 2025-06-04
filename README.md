@@ -11,7 +11,7 @@ Each generated daily page includes links back to the corresponding **monthly** a
    - The Python file should be placed in your LibreOffice user macros folder. For most installations on Windows, this is:
 
      ```
-     C:\Users\<YourUsername>\AppData\Roaming\LibreOffice\4\user\Scripts\python\AgendaGenerator
+     C:\Users\<YourUsername>\AppData\Roaming\LibreOffice\4\user\Scripts\python
      ```
 
      Replace `<YourUsername>` with your Windows username.
