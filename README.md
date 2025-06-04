@@ -43,10 +43,17 @@ The agenda uses a `.odt` template for daily pages, included in the repository. T
 
 | Field          | Description                               |
 |----------------|-------------------------------------------|
-| `<d>`          | Day of the month (1–31)                   |
+| `<d`          | Day of the month (1–31)                   |
 | `<MONTH>`      | Full name of the month (e.g., March)      |
 | `<WEEKDAY>`    | Name of the weekday (e.g., Monday)        |
 | `<WEEKNUMBER>` | ISO week number of the date               |
+
+The script also insert several helpful hyperlinks:
+
+- **Daily Pages**:
+  - A hyperlink is added to an image named `"CalendarIcon"` that links back to the **yearly calendar**.
+  - Hyperlinks are added to the abbreviated month names (`"JAN"`, `"FEB"`, etc.) that link to their corresponding **monthly overview pages**.
+  - If a table named `"CalendarTable"` is present in the template, it is replaced with an auto-generated calendar for the month. Each day in this table includes a hyperlink to the corresponding **daily page**.
 
 You can customize the appearance, layout, or add/remove sections in the template as long as these fields are present where needed.
 
