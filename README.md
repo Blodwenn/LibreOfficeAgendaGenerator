@@ -37,6 +37,8 @@ Once you confirm, the script will automatically generate:
 - Monthly overview pages.
 - Hyperlinked daily pages, with each day linked to its monthly and yearly view.
 
+Then you can export the file as a pdf, and use it on you Remarkable.
+
 ## Template Customization
 
 The agenda uses a `.odt` template for daily pages, included in the repository. The template uses placeholder fields that will be automatically replaced by the script. These fields are:
