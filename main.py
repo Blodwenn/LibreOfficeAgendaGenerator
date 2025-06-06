@@ -1,4 +1,4 @@
-from AgendaGenerator import GenerateCalendar, GenerateMonthlyAgenda, GenerateAll, GenerateDailyAgenda, ConfigurePageForRMK, GenerateTitlePage
+from AgendaGenerator import generate_calendar, generate_monthly_agenda, generate_all, generate_daily_agenda, configure_page_for_rmk, generate_title_page
 
 if __name__ == '__main__':
     # For debugging, launch libroffice with:
@@ -13,4 +13,4 @@ if __name__ == '__main__':
     # GenerateTitlePage(2025)
     # GenerateCalendar(2025)
     # GenerateMonthlyAgenda(2025)
-    GenerateDailyAgenda(year=2025, test=True)
+    generate_daily_agenda(year=2025, test=True)

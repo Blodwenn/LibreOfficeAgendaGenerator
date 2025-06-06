@@ -1,8 +1,10 @@
 # LibreOffice Agenda Generator
 
-A LibreOffice automation script written in Python using the UNO API. This tool generates a fully hyperlinked yearly agenda — including a title page, yearly calendar, monthly overviews, and daily pages based on a customizable template.
+A LibreOffice automation script written in Python using the UNO API. This tool generates a fully hyperlinked yearly agenda, including a title page, yearly calendar, monthly overviews, and daily pages based on a customizable template.
 
-Each generated daily page includes links back to the corresponding **monthly** and **yearly** views, making it easy to navigate across the planner. Ideal for reMarkable tablet users, printable planners, or anyone wanting a personalized, interactive agenda.
+Each generated daily page includes links back to the corresponding **monthly** and **yearly** views, making it easy to navigate across the planner. Ideal for reMarkable users, printable planners, or anyone wanting a personalized, interactive agenda.
+
+It is specially tailored for use with the reMarkable Paper Pro (it formats the page size, etc.), but can be adapted for any LibreOffice Writer user.
 
 ## Installation
 
@@ -11,7 +13,7 @@ Each generated daily page includes links back to the corresponding **monthly** a
    - The Python file should be placed in your LibreOffice user macros folder. For most installations on Windows, this is:
 
      ```
-     C:\Users\<YourUsername>\AppData\Roaming\LibreOffice\4\user\Scripts\python\AgendaGenerator
+     C:\Users\<YourUsername>\AppData\Roaming\LibreOffice\4\user\Scripts\python
      ```
 
      Replace `<YourUsername>` with your Windows username.
@@ -25,7 +27,7 @@ Each generated daily page includes links back to the corresponding **monthly** a
 2. Navigate to:  
    `Tools > Macros > Run Macro...`
 3. In the dialog, select:  
-   `My Macros > LibreOfficeAgendaGenerator > GenerateAll`  
+   `My Macros > LibreOfficeAgendaGenerator > generate_all`  
    and click **Run**.
 4. The script will prompt you to:
    - Enter the **year** for which to generate the agenda.
@@ -36,6 +38,14 @@ Once you confirm, the script will automatically generate:
 - A full-year calendar with links to each day.
 - Monthly overview pages.
 - Hyperlinked daily pages, with each day linked to its monthly and yearly view.
+
+The script will open a new LibreOffice Writer window to load and use the daily template.  
+**Do not modify, close, or interact with either Writer window while the script is running.** Any interference could cause the generation to fail or corrupt the output document.
+
+> [!WARNING]  
+> Generating daily pages for an entire year is a heavy operation and may take **several minutes** to complete. Please be patient while the script runs.
+
+Then, once the process has finished you can export the file as a pdf, and use it on you reMarkable.
 
 ## Template Customization
 
